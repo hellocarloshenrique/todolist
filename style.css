@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+}
+.container {
+    width: 400px;
+    margin: 20px auto;
+}
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li:last-child {
+    border-bottom: none;
+}
+.remove-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
