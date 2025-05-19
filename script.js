@@ -5,7 +5,11 @@ function addTask() {
     const taskText = taskInput.value.trim();
 
     if (taskText !== '') {
+        const taskId = crypto.randomUUID();
         const listItem = document.createElement('li');
+
+        listItem.setAttribute('data-task-id', taskId);
+        
         listItem.innerHTML = `
             <span>${taskText}</span>
             <div>
@@ -23,13 +27,17 @@ function addTask() {
 }
 
 function removeTask(button) {
-    //plaicar UUID aqui nessa porra
-    const listItem = button.parentNode.parentNode;
+    //aplicar UUID aqui nessa porra
+    //const listItem = button.parentNode.parentNode;
+    const listItem = button.closest('li');
+    const taskIdToRemove = listItem.getAttribute('data-task-id');
     taskList.removeChild(listItem);
 }
 
 function toggleComplete(button) {
-    const listItem = button.parentNode.parentNode;
+    //const listItem = button.parentNode.parentNode;
+    const listItem = button.closest('li');
+    const taskIdToToggle = listItem.getAttribute('data-task-id');
     listItem.querySelector('span').classList.toggle('completed');
     button.textContent = listItem.querySelector('span').classList.contains('completed') ? 'Desfazer' : 'Feito';
     
