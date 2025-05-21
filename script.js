@@ -7,7 +7,7 @@ function addTask() {
     if (taskText !== '') {
         const taskId = crypto.randomUUID();
         const listItem = document.createElement('li');
-
+        //elemento/objeto.Metodo(atributo, variável com o dado);
         listItem.setAttribute('data-task-id', taskId);
         
         listItem.innerHTML = `
