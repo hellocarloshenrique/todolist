@@ -22,12 +22,17 @@ function addTask() {
         E que também adiciona a li dentro da ul taskList
         */
         taskList.appendChild(listItem);
-        taskInput.value = '';
+        //taskInput.value = '';
+        cleanTask(taskInput);
     } 
 }
+//estou tentando tranformar a limpeza do campo de entrada em uma função
+function cleanTask(taskInput) {
+    taskInput.value = '';  
+}
+
 
 function removeTask(button) {
-    //aplicar UUID aqui nessa porra
     //const listItem = button.parentNode.parentNode;
     const listItem = button.closest('li');
     const taskIdToRemove = listItem.getAttribute('data-task-id');
