@@ -1,9 +1,18 @@
 const taskInput = document.getElementById('newTask');
 const taskList = document.getElementById('taskList');
 
-function addTask() {
-    const taskText = taskInput.value.trim();
+//Validade vai apenas validar se é verdadeira ou falsa o input
+function validateTask(taskText) {
+    if (taskText !== '') {
+        return true;   
+    } else {
+        return false;
+    }
+}
 
+function TaskTempUnnamed(taskText) {
+    //const taskText = taskInput.value.trim();
+    
     if (taskText !== '') {
         const taskId = crypto.randomUUID();
         const listItem = document.createElement('li');
@@ -11,22 +20,29 @@ function addTask() {
         listItem.setAttribute('data-task-id', taskId);
         
         listItem.innerHTML = `
-            <span>${taskText}</span>
-            <div>
-                <button onclick="toggleComplete(this)">Feito</button>
-                <button class="remove-btn" onclick="removeTask(this)">Remover</button>
+        <span>${taskText}</span>
+        <div>
+        <button onclick="toggleComplete(this)">Feito</button>
+        <button class="remove-btn" onclick="removeTask(this)">Remover</button>
             </div>
-        `;
-        /*
-        Metodo DOM para fazer aparecer minha nova tarefa e ordenar da última para a primeira
-        E que também adiciona a li dentro da ul taskList
-        */
-        taskList.appendChild(listItem);
-        //taskInput.value = '';
-        cleanTask(taskInput);
+            `;
+            /*
+            Metodo DOM para fazer aparecer minha nova tarefa e ordenar da última para a primeira
+            E que também adiciona a li dentro da ul taskList
+            */
+           //taskList.appendChild(listItem);
+        //cleanTask(taskInput);
+        return taskText;
     } 
 }
-//estou tentando tranformar a limpeza do campo de entrada em uma função
+
+function addTask() {
+    const taskText = taskInput.value.trim();
+    taskList.appendChild(listItem);
+    validateTask(taskText);
+}
+
+//Função responsavel pela limpeza do campo de input
 function cleanTask(taskInput) {
     taskInput.value = '';  
 }
