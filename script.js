@@ -10,34 +10,32 @@ function validateTask(taskText) {
     }
 }
 
-function TaskTempUnnamed(taskText) {
-    //const taskText = taskInput.value.trim();
-    
-    if (taskText !== '') {
-        const taskId = crypto.randomUUID();
-        const listItem = document.createElement('li');
-        //elemento/objeto.Metodo(atributo, variável com o dado);
-        listItem.setAttribute('data-task-id', taskId);
-        
-        listItem.innerHTML = `
-        <span>${taskText}</span>
-        <div>
-        <button onclick="toggleComplete(this)">Feito</button>
-        <button class="remove-btn" onclick="removeTask(this)">Remover</button>
-            </div>
-            `;
-            /*
-            Metodo DOM para fazer aparecer minha nova tarefa e ordenar da última para a primeira
-            E que também adiciona a li dentro da ul taskList
-            */
-           //taskList.appendChild(listItem);
-        //cleanTask(taskInput);
-        return taskText;
-    } 
-}
-
 function addTask() {
     const taskText = taskInput.value.trim();
+    validateTask(taskText);
+
+    const taskId = crypto.randomUUID();
+    const listItem = document.createElement('li');
+    //elemento/objeto.Metodo(atributo, variável com o dado);
+    listItem.setAttribute('data-task-id', taskId);
+    
+    listItem.innerHTML = `
+    <span>${taskText}</span>
+    <div>
+    <button onclick="toggleComplete(this)">Feito</button>
+    <button class="remove-btn" onclick="removeTask(this)">Remover</button>
+    </div>
+    `;
+    /*
+    Metodo DOM para fazer aparecer minha nova tarefa e ordenar da última para a primeira
+    E que também adiciona a li dentro da ul taskList
+    */
+   taskList.appendChild(listItem);
+   cleanTask(taskInput);
+}
+
+function iDontNo() {
+    //const taskText = taskInput.value.trim();
     taskList.appendChild(listItem);
     validateTask(taskText);
 }
