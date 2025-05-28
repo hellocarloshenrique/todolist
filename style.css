@@ -1,9 +1,13 @@
 body {
     font-family: sans-serif;
+    background-color: #eee;
 }
 .container {
     width: 400px;
-    margin: 20px auto;
+    margin: 40px auto;
+    background-color: #ccc;
+    border-radius: 10px;
+
 }
 input[type="text"] {
     width: 70%;
