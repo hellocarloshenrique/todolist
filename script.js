@@ -14,7 +14,7 @@ function addTask() {
     const taskText = taskInput.value.trim();
     validateTask(taskText);
 
-    if (validateTask === true) {
+    if (validateTask(taskText)) {
         const taskId = crypto.randomUUID();
         const listItem = document.createElement('li');
         //elemento/objeto.Metodo(atributo, variável com o dado);
@@ -33,14 +33,8 @@ function addTask() {
         */
        taskList.appendChild(listItem);
        cleanTask(taskInput);
-    }
-
-}
-
-function iDontNo() {
-    //const taskText = taskInput.value.trim();
-    taskList.appendChild(listItem);
-    validateTask(taskText);
+    } 
+    
 }
 
 //Função responsavel pela limpeza do campo de input
