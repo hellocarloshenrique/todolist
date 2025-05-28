@@ -33,8 +33,10 @@ function addTask() {
         */
        taskList.appendChild(listItem);
        cleanTask(taskInput);
-    } 
-    
+    } else { // não precisava desse else mas quis fazer uma graça
+        alert("Por favor, digite uma tarefa.");
+    }
+
 }
 
 //Função responsavel pela limpeza do campo de input
