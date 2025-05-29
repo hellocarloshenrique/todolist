@@ -6,7 +6,8 @@ body {
     width: 400px;
     margin: 40px auto;
     background-color: #ccc;
-    border-radius: 10px;
+    border-radius: 8px;
+    padding: 10px 20px;
 
 }
 input[type="text"] {
