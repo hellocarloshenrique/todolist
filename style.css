@@ -1,11 +1,12 @@
 body {
     font-family: sans-serif;
     background-color: #eee;
+    color: #eee;
 }
 .container {
     width: 400px;
     margin: 40px auto;
-    background-color: #ccc;
+    background-color: #3c424a;
     border-radius: 8px;
     padding: 10px 20px;
 
@@ -14,12 +15,19 @@ input[type="text"] {
     width: 70%;
     padding: 10px;
     margin-right: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #343a40;
     box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #343a40;
+    color: #888;
 }
 button {
     padding: 10px 15px;
     cursor: pointer;
+    background-color: #6c63ff;
+    border: #6c63ff;
+    border-radius: 5px;
+    color: #eee;
 }
 ul {
     list-style-type: none;
@@ -39,7 +47,7 @@ li:last-child {
     background-color: #f44336;
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     cursor: pointer;
     border-radius: 3px;
 }
