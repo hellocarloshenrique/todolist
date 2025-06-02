@@ -24,6 +24,9 @@ function addTask() {
         <span>${taskText}</span>
         <div>
         <button onclick="toggleComplete(this)">Feito</button>
+        <button class="remove-btn" onclick="removeTask(this)"><span class="material-symbols-outlined">
+        delete
+        </span></button>
         <button class="remove-btn" onclick="removeTask(this)">Remover</button>
         </div>
         `;
