@@ -24,12 +24,16 @@ function addTask() {
         <span>${taskText}</span>
         <div>
         <button onclick="toggleComplete(this)">Feito</button>
-        <button class="remove-btn" onclick="removeTask(this)"><span class="material-symbols-outlined">
-        delete
-        </span></button>
+        <button class="remove-btn" onclick="removeTask(this)">
+        <span class="material-symbols-outlined">delete</span>
+        </button>
+        
+        `;
+        /*
+        por enquanto não vou usar esse trecho do código, fica aí.
         <button class="remove-btn" onclick="removeTask(this)">Remover</button>
         </div>
-        `;
+        */
         /*
         Metodo DOM para fazer aparecer minha nova tarefa e ordenar da última para a primeira
         E que também adiciona a li dentro da ul taskList
