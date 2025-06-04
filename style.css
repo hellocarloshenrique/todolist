@@ -1,12 +1,12 @@
 body {
     font-family: sans-serif;
-    background-color: #eee;
+    background-color: #171717;
     color: #eee;
 }
 .container {
     width: 400px;
     margin: 40px auto;
-    background-color: #3c424a;
+    background-color: #323d42;
     border-radius: 8px;
     padding: 10px 20px;
 
@@ -19,45 +19,48 @@ input[type="text"] {
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #343a40;
-    color: #eee;
+    color: #e7e6e6;
 }
 button {
     padding: 10px 15px;
     cursor: pointer;
-    background-color: #6c63ff;
-    border: #6c63ff;
+    background-color: #447fde;
+    border: #447fde;
     border-radius: 5px;
     color: #eee;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
 }
+
 li {
     padding: 8px 0;
     border-bottom: 1px solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #eee;
 }
 li:last-child {
     border-bottom: none;
 }
 .remove-btn {
-    background-color: #f44336;
+    background-color: #c02e30;
     color: white;
     border: none;
-    padding: 10px 15px;
     cursor: pointer;
     border-radius: 3px;
 }
+
 .completed {
     text-decoration: line-through;
     color: #888;
 }
 
 .remove-btn .material-symbols-outlined {
-    font-size: 25px;
+    font-size: 12px;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
