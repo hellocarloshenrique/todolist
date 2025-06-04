@@ -1,7 +1,7 @@
 const taskInput = document.getElementById('newTask');
 const taskList = document.getElementById('taskList');
 
-//Validade vai apenas validar se é verdadeira ou falsa o input
+//Validate vai apenas validar se é verdadeira ou falsa o input
 function validateTask(taskText) {
     if (taskText !== '') {
         return true;   
