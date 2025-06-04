@@ -27,6 +27,7 @@ function addTask() {
         <button class="remove-btn" onclick="removeTask(this)">
         <span class="material-symbols-outlined">delete</span>
         </button>
+        <button class="editTask" onclick="editTask(this)">Editar</button>
         
         `;
         /*
