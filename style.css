@@ -1,12 +1,12 @@
 body {
     font-family: sans-serif;
-    background-color: #171717;
+    background-color: #eee;
     color: #eee;
 }
 .container {
-    width: 400px;
+    width: 75%;
     margin: 40px auto;
-    background-color: #323d42;
+    background-color: #3c424a;
     border-radius: 8px;
     padding: 10px 20px;
 
@@ -24,8 +24,8 @@ input[type="text"] {
 button {
     padding: 10px 15px;
     cursor: pointer;
-    background-color: #447fde;
-    border: #447fde;
+    background-color: #6c63ff;
+    border: #6c63ff;
     border-radius: 5px;
     color: #eee;
 }
@@ -47,7 +47,7 @@ li:last-child {
     border-bottom: none;
 }
 .remove-btn {
-    background-color: #c02e30;
+    background-color: #f44336;
     color: white;
     border: none;
     cursor: pointer;
