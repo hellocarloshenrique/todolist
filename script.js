@@ -52,6 +52,11 @@ function cleanTask(taskInput) {
     taskInput.value = '';  
 }
 
+//tentando criar uma função para editar a task
+function editTask(params) {
+    
+}
+
 
 function removeTask(button) {
     //const listItem = button.parentNode.parentNode;
