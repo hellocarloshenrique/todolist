@@ -54,6 +54,7 @@ function cleanTask(taskInput) {
 
 //tentando criar uma função para editar a task
 function editTask(params) {
+    const taskIdtoEdit = listItem.getAttribute('data-task-id');
     
 }
 
